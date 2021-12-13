@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>how to create a function in the constructor?</h1>
+    
+
+    <script>
+
+        var student1 = new Student("x ", 17 , 3.67, ["bangla ", "english ", "hindi "])
+        var student2 = new Student("y ", 27, 4.67, ["bangla ", "english ", "hindi "])
+
+        function Student ( name, age, cgpa, lang) {
+            this.name = name;
+            this.age = age;
+            this.cgpa = cgpa;
+            this.lang =lang;
+        this.Display= function() {
+            document.write(this.name);
+            document.write(this.age);
+            document.write(this.cgpa);
+            document.write(this.lang);
+        }
+        }
+        student1.Display();
+
+    </script>
+
+
+</body>
+</html>
